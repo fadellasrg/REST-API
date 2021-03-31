@@ -45,7 +45,7 @@ Default output format: json
 - Make new database with the name `cafe`.
 - Import the file `cafe.sql`.
 ---
-## Create Environment Variables (Local)
+## Create Environment Variables
 - Make your .env file and fill it (for local purpose).
 ```
 PORT=fill to set the API running port.
@@ -62,7 +62,7 @@ $ npm run deploy
 - Before run it, set up enironment variables in AWS Lambda function.
 - Click on your lambda function that has been created.
 - Click configuration and then choose Environment Variables.
-- Fill the key and value.
+- Fill the key and value like before.
 - Open your Postman App, copy and paste your endpoint and run it with additional methods and paths.
 - Here's my [Postman Documentation](https://documenter.getpostman.com/view/13713483/TzCMe8cZ) that will help you.
 ---
