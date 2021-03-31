@@ -7,11 +7,11 @@ provider:
   memorySize: 512
   timeout: 15
   stage: production
-  region: us-east-1 # make sure it's the same with your aws configuration
+  region: us-east-1   # make sure it's the same with your aws configuration
 
 functions:
  api:
-   handler: lambda.handler # from lambda.js
+   handler: lambda.handler  # from lambda.js
    events:
      - http: ANY {proxy+}   # all method (GET, POST, PUT, PATCH, DELETE)
      - http: ANY /          # any routes that have been created in app.js
