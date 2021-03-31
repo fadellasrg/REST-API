@@ -1,17 +1,17 @@
-service: aws-lambda-api
+service: aws-lambda-api # your service name
 useDotenv: true
 
 provider:
   name: aws
-  runtime: nodejs14.x
+  runtime: nodejs14.x # your nodejs version
   memorySize: 512
   timeout: 15
   stage: production
-  region: us-east-1
+  region: us-east-1 # make sure it's the same with your aws configuration
 
 functions:
  api:
-   handler: lambda.handler
+   handler: lambda.handler # from lambda.js
    events:
-     - http: ANY {proxy+}
-     - http: ANY /
+     - http: ANY {proxy+}   # all method (GET, POST, PUT, PATCH, DELETE)
+     - http: ANY /          # any routes that have been created in app.js
