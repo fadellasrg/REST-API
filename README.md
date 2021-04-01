@@ -41,7 +41,7 @@ Default output format: json
 - In region section, make sure to set the same value as your previous aws configuration.
 ---
 ## Set up database
-- Open your [phpmyadmin](http://localhost/phpmyadmin/).
+- Open your phpmyadmin.
 - Make new database with the name `cafe`.
 - Import the file `cafe.sql`.
 ---
@@ -58,7 +58,8 @@ DB_PASSWORD=fill with PASSWORD in your database configuration.
 ```
 $ npm run deploy
 ```
-- You will get your new endpoints. 
+- It will create a new .serverless folder.
+- If successfull, you will get your new endpoints.
 - Before run it, set up enironment variables in AWS Lambda function.
 - Click on your lambda function that has been created.
 - Click configuration and then choose Environment Variables.
@@ -66,4 +67,4 @@ $ npm run deploy
 - Open your Postman App, copy and paste your endpoint and run it with additional methods and paths.
 - Here's my [Postman Documentation](https://documenter.getpostman.com/view/13713483/TzCMe8cZ) that will help you.
 ---
-Copyright © 2020 [Fadella Amirah](https://github.com/fadellasrg)
+Copyright © 2021 [Fadella Amirah](https://github.com/fadellasrg)
